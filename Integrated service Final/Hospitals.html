@@ -13,7 +13,7 @@
             align-items: center;  */ 
             height: 100vh;
             margin-left: 50px;
-            color: #a39a9a;
+            color: #0d0d0d;
             overflow-x: hidden;
         }
 
@@ -270,7 +270,26 @@ footer {
 .footer-bottom a:hover {
     text-decoration: underline;
 }
-
+.btn{
+    margin-left: 75px;
+    background-color: #0b3c5d;
+    color: #ffffff;
+    border-radius: 25px;
+    padding: 15px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+.buttons{
+    margin-left: 50px;
+}
+.buttons :hover{
+    transform: scale(1.1);
+    
+}
+.container{
+ text-align: center;
+}
     </style>
 </head>
 <body>
@@ -280,7 +299,7 @@ footer {
         </div>
         
         <div class="dropdown">
-            <button class="dropbtn">Home</button>
+            <a href="home.html"><button class="dropbtn">Home</button></a>
         </div>
         
         <div class="dropdown">
@@ -347,15 +366,20 @@ footer {
         
     </div>
     <h1>Best Hospitals in Chennai</h1>
+     
     <div class="buttons">
-        <button onclick="showHospitals('alwarpet')">Alwarpet</button>
-        <button onclick="showHospitals('annanagar')">Anna Nagar</button>
-        <button onclick="showHospitals('tnagar')">T Nagar</button>
-        <button onclick="showHospitals('ambattur')">Ambattur</button>
-        <button onclick="showHospitals('mylapore')">Mylapore</button>
-        <button onclick="showHospitals('kilpauk')">Kilpauk</button>
+        <button class="btn" onclick="showHospitals('alwarpet')">Alwarpet</button>
+        <button class="btn" onclick="showHospitals('annanagar')">Anna Nagar</button>
+        <button class="btn" onclick="showHospitals('tnagar')">T Nagar</button>
+        <button class="btn" onclick="showHospitals('ambattur')">Ambattur</button>
+        <button class="btn" onclick="showHospitals('mylapore')">Mylapore</button>
+        <button class="btn" onclick="showHospitals('kilpauk')">Kilpauk</button>
     </div>
     <div id="hospitals-list"></div>
+    <div class="container">
+        <h1>Welcome to the Hospital Services</h1>
+        <p>Select an area from above to learn more.</p>
+    </div> 
     <script> 
         const hospitals = {
     alwarpet: [
