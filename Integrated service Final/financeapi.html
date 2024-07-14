@@ -37,7 +37,7 @@
         }
 
         h1 {
-            color: #ffffff;
+            color: #3ca04b;
             margin-bottom: 20px;
             font-size: 2.5em;
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
@@ -61,16 +61,17 @@
         button {
             padding: 10px 20px;
             border: none;
-            background-color: #090909;
+            background-color: #3ca04b;
             color: white;
             font-size: 16px;
             border-radius: 5px;
             cursor: pointer;
             transition: background-color 0.3s, transform 0.3s;
+            margin-top: 20px;
         }
 
         button:hover {
-            background-color: #797979;
+            background-color: #43e32e;
             transform: translateY(-2px);
         }
 
@@ -263,10 +264,13 @@
         .footer-bottom a:hover {
             text-decoration: underline;
         }
+        .title{
+            color: #000;
+        }
     </style>
 </head>
 <body>
-    <h1>Tax Saving Recommendations</h1>
+   <div class="title"> <h1>Tax Saving Recommendations</h1> </div>
     <input type="text" id="search-input" placeholder="Search for tax saving tips...">
     <button onclick="search()">Search</button>
     <div id="results"></div>
